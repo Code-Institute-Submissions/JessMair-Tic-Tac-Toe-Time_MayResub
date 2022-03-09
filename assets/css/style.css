@@ -4,6 +4,7 @@
 
 :root {
     --cell-size: 100px;
+    --mark-size: cal(var(var(--cell-size) * .8);
 }
 
 body {
@@ -16,6 +17,8 @@ body {
     display: grid;
     justify-content: center;
     align-content: center;
+    justify-items: center;
+    align-items: center;
     grid-template-columns: repeat(3, auto);
 }
 
