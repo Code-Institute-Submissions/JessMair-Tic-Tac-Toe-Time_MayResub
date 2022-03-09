@@ -49,9 +49,15 @@ body {
     cursor: not-allowed;
 }
 
+.board.x .cell:hover {
+
+}
+
 
 .cell.x::before,
-.cell.x::after {
+.cell.x::after,
+.board.x .cell:hover::before,
+.board.x .cell:hover::after {
     content: '';
     position: absolute;
     width: calc(var(--mark-size)*.15);
@@ -60,11 +66,13 @@ body {
 
 }
 
-.cell::before {
+.cell::before,
+.board.x .cell:hover::before {
     transform: rotate(45deg);
 }
 
-.cell.cell.x::after {
+.cell.cell.x::after,
+.board.x .cell:hover::after {
     transform: rotate(-45deg);
 }
 
