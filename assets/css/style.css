@@ -98,3 +98,12 @@ body {
     height: calc(var(--mark-size) * .6);
     background-color: #191970;
 }
+
+.winning-message {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(173, 216, 230, .9);
+}
