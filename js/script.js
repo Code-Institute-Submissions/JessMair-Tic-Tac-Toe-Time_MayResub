@@ -22,6 +22,8 @@ const winningConditions = [
 
 const cellElements = document.querySelectorAll('[data-cell]')
 const board = document.getElementById('board')
+const winningMessageElement = document.getElementById('winningMessage')
+const winningMessageTextElement = document.querySelector('[data-winning-message-text]')
 let circleTurn
 
 //code line 8 to 16 has been added to allow the x to hover above the board for player at start of game, but does not work
@@ -41,7 +43,7 @@ function handleClick(e) {
     const currentClass = circleTurn ? CIRCLE_CLASS : X_CLASS
     placeMark(cell, currentClass)
     if (checkwin(currentClass)) {
-        console.log('winner')
+        endGame(false)
     }
 
     //check for win
@@ -50,6 +52,17 @@ function handleClick(e) {
     //switch turns
     swapTurns()
     setBoardHoverClass()
+}
+
+function endGame(draw) {
+    if (draw) {
+       
+    } else {
+        winningMessageTextElement.innerText = '${circleTurn ? "O's" : "X's"} Wins!'
+    }
+
+    winningMessageElement.classList.add('show')
+
 }
 
 function placeMark(cell, currentClass) {
