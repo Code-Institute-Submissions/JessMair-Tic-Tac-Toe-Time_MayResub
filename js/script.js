@@ -40,7 +40,10 @@ function handleClick(e) {
     const cell = e.target 
     const currentClass = circleTurn ? CIRCLE_CLASS : X_CLASS
     placeMark(cell, currentClass)
-    
+    if (checkwin(currentClass)) {
+        console.log('winner')
+    }
+
     //check for win
     //check for draw
 
@@ -65,4 +68,12 @@ if (circleTurn) {
   } else{
     board.classList.add(X_CLASS)
   }
+}
+
+function checkwin(currentClass) {
+    return winningConditions.some(combinations => {
+        return combinations.every(index => {
+            return cellElements[index].classList.contains(currentClass)
+        })
+    })
 }
