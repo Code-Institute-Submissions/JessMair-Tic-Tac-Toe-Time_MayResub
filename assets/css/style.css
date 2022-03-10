@@ -33,16 +33,6 @@ body {
     position: relative;
     cursor: pointer;
 }
-/*
-.cell:first-child,
-.cell:nth-child(2),
-.cell:nth-child(3),
-.cell:nth-child(3n + 1),
-.cell:nth-child(3n + 3),
-.cell:last-child,
-.cell:nth-child(8),
-.cell:nth-child(7) ,
-*/
 
 .cell.x,
 .cell.circle {

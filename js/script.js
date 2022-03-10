@@ -26,7 +26,7 @@ const winningMessageElement = document.getElementById('winningMessage')
 const winningMessageTextElement = document.querySelector('[data-winning-message-text]')
 let circleTurn
 
-//code line 8 to 16 has been added to allow the x to hover above the board for player at start of game, but does not work
+
 startGame()
 
 function startGame() {
@@ -37,32 +37,37 @@ function startGame() {
     setBoardHoverClass()
 }
 
-
 function handleClick(e) {
     const cell = e.target 
     const currentClass = circleTurn ? CIRCLE_CLASS : X_CLASS
     placeMark(cell, currentClass)
-    if (checkwin(currentClass)) {
+    if (checkWin(currentClass)) {
         endGame(false)
-    }
+    }  else if (isDraw()) {
+        endGame(true)
+    }  else {
+        swapTurns()
+        setBoardHoverClass()
+    } 
+} 
 
-    //check for win
-    //check for draw
-
-    //switch turns
-    swapTurns()
-    setBoardHoverClass()
-}
+       
 
 function endGame(draw) {
     if (draw) {
-       
+      winningMessageElementText.innerText = 'Draw'
     } else {
-        winningMessageTextElement.innerText = '${circleTurn ? "O's" : "X's"} Wins!'
+        winningMessageTextElement.innerText = '${circleTurn ? "O" : "X"} Wins'
     }
 
     winningMessageElement.classList.add('show')
+}
 
+function isDraw() {
+    return [...cellElements].every(cell => {
+        return cell.classList.contains(X_CLASS) || 
+        cell.classList.contains(CIRCLE_CLASS)
+    })
 }
 
 function placeMark(cell, currentClass) {
@@ -83,10 +88,11 @@ if (circleTurn) {
   }
 }
 
-function checkwin(currentClass) {
-    return winningConditions.some(combinations => {
-        return combinations.every(index => {
+function checkWin(currentClass) {
+    return winningConditions.some(condition => {
+        return condition.every(index => {
             return cellElements[index].classList.contains(currentClass)
         })
     })
 }
+
