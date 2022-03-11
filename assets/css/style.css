@@ -14,12 +14,18 @@ body {
 .heading {
     text-align: center;
     font-size: 2.5rem;
+    display: block;
+    margin-block-start: 4em;
+    margin-block-end: 4em;
+    margin-inline-start: 6px;
+    margin-inline-end: 6px;
 }
+
 
 
 .board {
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
     display: grid;
     justify-content: center;
     align-content: center;
