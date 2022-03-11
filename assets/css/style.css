@@ -14,11 +14,6 @@ body {
 .heading {
     text-align: center;
     font-size: 2.5rem;
-    display: block;
-    margin-block-start: 4em;
-    margin-block-end: 4em;
-    margin-inline-start: 6px;
-    margin-inline-end: 6px;
 }
 
 
@@ -32,7 +27,10 @@ body {
     justify-items: center;
     align-items: center;
     grid-template-columns: repeat(3, auto);
+    width: 320px;
+    height:320px;  
 }
+
 
 .cell {
     width: var(--cell-size);
