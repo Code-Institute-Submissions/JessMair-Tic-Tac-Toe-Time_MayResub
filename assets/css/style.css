@@ -11,6 +11,12 @@ body {
     margin: 0;
 }
 
+.heading {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+
 .board {
     width: 100vw;
     height: 100vh;
@@ -39,9 +45,6 @@ body {
     cursor: not-allowed;
 }
 
-.board.x .cell:hover {
-
-}
 
 
 .cell.x::before,
