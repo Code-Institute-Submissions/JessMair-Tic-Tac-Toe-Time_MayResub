@@ -103,7 +103,7 @@ PAGE 2
 
 I used the site w3schools.com's "CSS-Colours" section to select a colour combination. I used the above "Midnight Blue" as the primary colour as it is dark and would create a contrast to the secndary colour I selcted.
 
-<img src="images.lightbluecolor.png" alt="Secondary colour for the game's details">
+<img src="images/lightbluecolor.png" alt="Secondary colour for the game's details">
 The light blue has been used for the details of the page such as the board game, the markers and the slightly trasnparent cover that displays in between game that displays the notification of the game's outcome. 
 I found these two colour to be complimenatry whilst still mainting a strong enough contrast to maintain the sites accesibility to all people. 
 
