@@ -66,7 +66,7 @@ A "Restart" button, that when pressed resets the board for a new game
 The website only has one page. The page contains the title, instructions and the boardgame itself. 
 The goal of this page is to be very easy to understand and digest. Also, for someone who is familiar with the classic game of Tic Tac Toe, to be able to go straight to playing the game. 
 
-ADD IMAGE OF THE PAGE WITH GAME HALF PLAYED 
+<img src="assets/images/gameinprogress.png" alt="image of a game in progress"> 
 
 The colour of the board game and the detail is complimentary and not too bright or dark, creating a good contrast and yet complimenting each other. 
 The instructions are not overly wordy so that the game is quick and easy to move on to. 
@@ -75,10 +75,10 @@ The board is interactive too as it registers a click and prevents the player fro
 IMAGE OF WINNER PAGE 
 This image shows the screen that shows containing a message of which player won, "X" or "O". The "Restart" button is interactive.
 
-IMAGE OF DRAW PAGE  
+<img src="assets/images/gamedraw.png" alt="image of a game that ended as a draw">   
 This image shows when the game ends in a draw. The "Restart" button is interactive. 
 
-IMAGE OF GAME RESET 
+<img src="assets/images/gamehome.png" alt="image of a game that has been reset to a clear board"> 
 This image shows the screen after the "Restart" button is pressed. A clean boardgame is visible. 
 
 # The Skeleton Plane 
@@ -94,11 +94,11 @@ PAGE 2
 # The Surface Plane
 
 ## Colour Palette
-<img src="images/midnightcolor.png" alt="Primary Background Colour, Midnight Blue">
+<img src="assets/images/midnightcolor.png" alt="Primary Background Colour, Midnight Blue">
 
 I used the site w3schools.com's "CSS-Colours" section to select a colour combination. I used the above "Midnight Blue" as the primary colour for the actual board game as it is dark and would create a contrast to the secondary colour I selected.
 
-<img src="images/lightbluecolor.png" alt="Secondary colour for the game's details">
+<img src="assets/images/lightbluecolor.png" alt="Secondary colour for the game's details">
 The light blue has been used for the details over the board game, such as the grid that divides the cells, the markers and the slightly transparent cover that displays in-between games behind the notification bearing the game's outcome. 
 I found these two colours to be complimentary whilst still having a strong enough contrast to maintain the sites accessibility. 
 
@@ -160,8 +160,13 @@ I have tested the site for achieving the goals set out in “User Stories”
 
 ## Validators 
 
-INCLUDE IMAGE OF VALIDATION 
+<img src="assets/images/htmlcheck.png" alt="HTML Validation">
 
+I checked the HTML code with W3C Jigsaw and there were no errors.
+
+<img src="assets/images/csscheck.png" alt="CSS Validation">
+
+I checked the CSS with W3C Jigsaw and no errors were found.
 
 # Responsiveness 
 I checked the website's responsiveness using Google Chrome Dev Tools. Mobile, tablet and desktop sizes were tested, and all worked well. 
