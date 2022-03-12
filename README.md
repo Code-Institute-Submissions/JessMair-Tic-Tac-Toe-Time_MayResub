@@ -153,6 +153,11 @@ Along the way, I found the following errors:
 
 - Although I have added code for "X" and "O" to take turns going first, X is always first and this is a bug that I have not been able to fix in time. 
 
+- I also checked the sites accesibility score using the google lighthouse tool. Below are a few images of the output showing that the site meets the standards required. 
+
+<img src="assets/images/lighthouse1.png" alt="Image showing scores"> <img src="assets/images/lighthouse2.png" alt="image of report">
+
+<img src="assets/images/lighthouseend.png" alt="footer of report">
 
 ## User Stories Testing 
 I have tested the site for achieving the goals set out in “User Stories”
