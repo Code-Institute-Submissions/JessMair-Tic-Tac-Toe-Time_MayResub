@@ -131,3 +131,54 @@ Below are features that I would have liked to add but have been unable to do so 
 - [Stack Overflow](https://stackoverflow.com/) To troubleshoot many times when experincing issues 
 - [Wikipedia](https://en.wikipedia.org/wiki/Tic-tac-toe) - To research the history and origind of the game 
 - [Exploratorium](https://en.wikipedia.org/wiki/Tic-tac-toe.html) - For simple game rules 
+
+# Testing
+
+
+
+
+
+## User Stories Testing 
+
+
+## Validators 
+
+INCLUDE IMAGE OF VALIDATION 
+
+
+
+# Responsiveness 
+I checked the website's responsiveness using Google Chrome Dev Tools. Mobile, tablet and desktop sizes were tested, and all worked well. 
+It also responded on each breakpoint that were set up on Media Query's and no visual or functional errors found
+
+
+# Version Control 
+
+- GitHub
+- Gitpod
+
+Gitpod served as the local repository and IDE. 
+GitHUb served as the remote repository. 
+
+The following steps were followed to maintain version control;
+
+- I created a repository on GitHub and named it 'Tic Tac Toe Time' 
+- I then signed in to Gitpod and opened a new workspace via the repository name 'TTic Tac Toe Time'
+- I created the pages, folders and files on GitPod
+- I saved my work on GitPod at regular intervals and pushed it to GitHub to keep it safe
+
+This is the process I followed having completing each significant section of code, I typed the following into the terminal:
+- git add . (This added the work to git)
+- git commit -m "COMMIT MESSAGE" (This committed the work)
+- git push (This pushed the work to GitHub)
+
+
+
+# Deployment 
+
+I followed the below steps on GitHub (insert link) to deploy the website. 
+
+- Go to repository and select 'settings'. 
+- Under the 'Github pages@ section, click on the live link. 
+- On "Source", select "Branch: main' for Branch and click save.
+- The website is now published on GitHub Pages and the link is provided on the same section
