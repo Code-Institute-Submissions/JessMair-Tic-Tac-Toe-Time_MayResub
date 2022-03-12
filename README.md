@@ -72,7 +72,7 @@ The colour of the board game and the detail is complimentary and not too bright 
 The instructions are not overly wordy so that the game is quick and easy to move on to. 
 The board is interactive too as it registers a click and prevents the player from being able to click on a cell that is already occupied 
 
-IMAGE OF WINNER PAGE
+<img src="assets/images/owin.png" alt="image of O's winning the game">
 
 The above image shows the screen that shows containing a message of which player won, "X" or "O". The "Restart" button is interactive.
 
@@ -143,13 +143,15 @@ Below are features that I would have liked to add but have been unable to do so 
 I have had more than a few errors along the way of creating this game. I tested the site after the implementation of each section. 
 Along the way, I found the following errors:
 
-- The hover feature does not always consistently work. 
+- The hover feature does not always consistently work. It works on full screen mode, however when used on mobile screen mode it does not seem to work in the console. 
 
 - The function to check the winner would not perform. I spent hours trying to figure out why the program kept throwing up errors in the console repeatedly. I read my code line by line and in the end a tutor from tutor support was able to spot that a capital letter was missing when defined in the functions, creating an inconsistency elsewhere in the code where it did have the capital letter at the right place. 
 
 - The responsiveness of the game on a mobile size screen was an issue. I had to get the boardgame itself to fit the mobile phone screen as it was floating partially below the lower half of the page, thus making it only half visible when first landing on the home page. I didn't want the player to have to scroll down to play the game and therefore amended the size properties assigned to the to enable it to fit the screen and display in a way that was originally intended. 
 
-- The biggest issue that I have faced with this project was figuring out the error in the syntax for the message that should display when "X" or "O" wins the game. This is something that I struggled to fix to the end as a tried many variations.
+- The biggest issue that I have faced with this project was figuring out the error in the syntax for the message that should display when "X" or "O" wins the game. This is something that I struggled to fix to the end as a tried many variations. I was able to google this and eventually fix the error in the code that allowed it to work. 
+
+- Although I have added code for "X" and "O" to take turns going first, X is always first and this is a bug that I have not been able to fix in time. 
 
 
 ## User Stories Testing 
