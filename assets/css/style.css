@@ -1,65 +1,63 @@
 *, *::after, *::before {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 :root {
-    --cell-size: 100px;
-    --mark-size: calc(var(--cell-size) * .8);
+  --cell-size: 200px;
+  --mark-size: calc(var(--cell-size) * .8);
 }
 
 body {
-    margin: 0;
+  margin: 0;
 }
 
 h1 {
-    text-align: center;
-    font-size: 2.5rem;
-    color: #191970;
-    text-decoration: underline;
-    text-decoration-color: #ADD8E6;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #191970;
+  text-decoration: underline;
+  text-decoration-color: #ADD8E6;
 }
 
 p {
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  text-align: center;
-  width: 300px;
-  font-size: small;
+display: block;
+margin-block-start: 1em;
+margin-block-end: 1em;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+text-align: center;
+width: 300px;
+font-size: small;
 }
 
 
 .board {
-    width: 100vw;
-    height: 90vh;
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    justify-items: center;
-    align-items: center;
-    grid-template-columns: repeat(3, auto);
-    width: 320px;
-    height:320px;  
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(3, auto);
+  width: 100vw;
+  height:80vh;  
 }
 
 
 .cell {
-    width: var(--cell-size);
-    height: var(--cell-size);
-    background-color: #191970;
-    border: 1px solid #ADD8E6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    cursor: pointer;
+  width: var(--cell-size);
+  height: var(--cell-size);
+  background-color: #191970;
+  border: 1px solid #ADD8E6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
 }
 
 .cell.x,
 .cell.circle {
-    cursor: not-allowed;
+  cursor: not-allowed;
 }
 
 
@@ -68,109 +66,97 @@ p {
 .cell.x::after,
 .board.x .cell:not(.x):not(.circle):hover::before,
 .board.x .cell:not(.x):not(.circle):hover::after {
-    content: '';
-    position: absolute;
-    width: calc(var(--mark-size)*.15);
-    height: var(--mark-size);
-    background-color: #ADD8E6;
+  content: '';
+  position: absolute;
+  width: calc(var(--mark-size)*.15);
+  height: var(--mark-size);
+  background-color: #ADD8E6;
 
 }
 
 .cell::before,
 .board.x .cell:not(.x):not(.circle):hover::before {
-    transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .cell.cell.x::after,
 .board.x .cell:not(.x):not(.circle):hover::after {
-    transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 .cell.circle::before,
 .cell.circle::after,
 .board.circle .cell:not(.x):not(.circle):hover::before,
 .board.circle .cell:not(.x):not(.circle):hover::after {
-    content: '';
-    position: absolute;
-    border-radius: 50%;
+  content: '';
+  position: absolute;
+  border-radius: 50%;
 }
 
 .cell.circle::before,
 .board.circle .cell:not(.x):not(.circle):hover::before {
-    width: var(--mark-size);
-    height: var(--mark-size);
-    background-color: #ADD8E6;
+  width: var(--mark-size);
+  height: var(--mark-size);
+  background-color: #ADD8E6;
 }
 
 .cell.circle::after,
 .board.circle .cell:not(.x):not(.circle):hover::after {
-    width: calc(var(--mark-size) * .6);
-    height: calc(var(--mark-size) * .6);
-    background-color: #191970;
+  width: calc(var(--mark-size) * .6);
+  height: calc(var(--mark-size) * .6);
+  background-color: #191970;
 }
 
 .winning-message {
-    display: none;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background-color: rgba(173, 216, 230, .9);
-    justify-content: center;
-    align-items: center;
-    color: black;
-    font-size: 4rem;
-    flex-direction: column;
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(173, 216, 230, .9);
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 4rem;
+  flex-direction: column;
 }
 
 .winning-message button {
-    font-size: 3rem;
-    background-color: white;
-    border: 1px solid black;
+  font-size: 3rem;
+  background-color: white;
+  border: 1px solid black;
 }
 
 .winning-message button:hover {
-    background-color: black;
-    color: white;
-    border-color: white;
+  background-color: black;
+  color: white;
+  border-color: white;
 }
 
 .winning-message.show {
-    display: flex;
+  display: flex;
 }
 
 
-/* 
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
-
-@media (min-width: 1281px) {
-  
-    /* CSS */
-    
-  }
-  
-  /* 
+/* media queries taken from https://gist.github.com/gokulkrishh/242e68d1ee94ad05f488
+ 
     ##Device = Laptops, Desktops
     ##Screen = B/w 1025px to 1280px
   */
   
   @media (min-width: 1025px) and (max-width: 1280px) {
     
-    /* CSS */
-    
-  }
-  
-  /* 
-    ##Device = Tablets, Ipads (portrait)
-    ##Screen = B/w 768px to 1024px
-  */
-  
-  @media (min-width: 768px) and (max-width: 1024px) {
-    
-    /* CSS */
+    .board {
+      display: grid;
+      justify-content: center;
+      align-content: center;
+      justify-items: center;
+      align-items: center;
+      grid-template-columns: repeat(3, auto);
+      width: 100vw;
+      height:80vh;   
+    }
     
   }
   
@@ -181,28 +167,57 @@ p {
   
   @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     
-    /* CSS */
+    @media (min-width: 1025px) and (max-width: 1280px) {
+    
+      .board {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: repeat(3, auto);
+        width: 100vw;
+        height:80vh; 
+      }
+      
+    }
     
   }
   
-  /* 
-    ##Device = Low Resolution Tablets, Mobiles (Landscape)
-    ##Screen = B/w 481px to 767px
-  */
-  
-  @media (min-width: 481px) and (max-width: 767px) {
-    
-    /* CSS */
-    
-  }
-  
+  /* smaller screen size that ipad */
+
+  @media screen and (max-width: 500px) {
+    :root {
+      --cell-size: 100px;
+      --mark-size: calc(var(--cell-size) * .8);
+    }
+}
+
   /* 
     ##Device = Most of the Smartphones Mobiles (Portrait)
     ##Screen = B/w 320px to 479px
   */
   
   @media (min-width: 320px) and (max-width: 480px) {
+
+    :root {
+      --cell-size: 100px;
+      --mark-size: calc(var(--cell-size) * .8);
+    }
     
-    /* CSS */
+    .board {
+      display: grid;
+      justify-content: center;
+      align-content: center;
+      justify-items: center;
+      align-items: center;
+      grid-template-columns: repeat(3, auto);
+      width: 100vw;
+      height:80vh;  
+    }
+    
+
+    
     
   }
+
