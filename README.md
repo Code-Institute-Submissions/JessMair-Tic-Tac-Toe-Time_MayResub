@@ -88,11 +88,10 @@ The above shows the screen after the "Restart" button is pressed. A clean boardg
 
 The design of this project was to make the content simplistic and one of the key objectives was to make the site fully responsive to a mobile screen size, as well as the bigger screen sizes. The reason being that such games are more likely to be played on mobile phones than on desktops for example.
 
-Below is a link to the wireframes I had completed
+Below is a link to the wireframe I had completed
 
-PAGE 1
+[Wireframe](assets/images/wireframe.jpg)
 
-PAGE 2 
 
 # The Surface Plane
 
@@ -153,11 +152,6 @@ Along the way, I found the following errors:
 
 - Although I have added code for "X" and "O" to take turns going first, X is always first and this is a bug that I have not been able to fix in time. 
 
-- I also checked the sites accesibility score using the google lighthouse tool. Below are a few images of the output showing that the site meets the standards required. 
-
-<img src="assets/images/lighthouse1.png" alt="Image showing scores"> <img src="assets/images/lighthouse2.png" alt="image of report">
-
-<img src="assets/images/lighthouseend.png" alt="footer of report">
 
 ## User Stories Testing 
 I have tested the site for achieving the goals set out in “User Stories”
@@ -186,7 +180,14 @@ I checked the CSS with W3C Jigsaw and no errors were found.
 
 # Responsiveness 
 I checked the website's responsiveness using Google Chrome Dev Tools. Mobile, tablet and desktop sizes were tested, and all worked well. 
-It also responded on each breakpoint that were set up on Media Query's and no visual or functional errors found
+It also responded on each breakpoint that were set up on Media Query's and no visual or functional errors found. 
+
+I also checked the sites accesibility score using the google lighthouse tool. Below are a few images of the output showing that the site meets the standards required. 
+
+<img src="assets/images/lighthouse1.png" alt="Image showing scores"> <img src="assets/images/lighthouse2.png" alt="image of report">
+
+<img src="assets/images/lighthouseend.png" alt="footer of report">
+
 
 # Version Control 
 
