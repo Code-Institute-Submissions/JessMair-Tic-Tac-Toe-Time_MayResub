@@ -72,14 +72,17 @@ The colour of the board game and the detail is complimentary and not too bright 
 The instructions are not overly wordy so that the game is quick and easy to move on to. 
 The board is interactive too as it registers a click and prevents the player from being able to click on a cell that is already occupied 
 
-IMAGE OF WINNER PAGE 
-This image shows the screen that shows containing a message of which player won, "X" or "O". The "Restart" button is interactive.
+IMAGE OF WINNER PAGE
 
-<img src="assets/images/gamedraw.png" alt="image of a game that ended as a draw">   
-This image shows when the game ends in a draw. The "Restart" button is interactive. 
+The above image shows the screen that shows containing a message of which player won, "X" or "O". The "Restart" button is interactive.
+
+<img src="assets/images/gamedraw.png" alt="image of a game that ended as a draw"> 
+
+The above image shows when the game ends in a draw. The "Restart" button is interactive. 
 
 <img src="assets/images/gamehome.png" alt="image of a game that has been reset to a clear board"> 
-This image shows the screen after the "Restart" button is pressed. A clean boardgame is visible. 
+
+The above shows the screen after the "Restart" button is pressed. A clean boardgame is visible. 
 
 # The Skeleton Plane 
 
