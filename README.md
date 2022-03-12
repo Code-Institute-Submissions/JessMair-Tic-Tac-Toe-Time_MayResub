@@ -121,6 +121,7 @@ Below are features that I would have liked to add but have been unable to do so 
 - [Github]( https://github.com/) to keep the file 
 - [Gitpod]( https://www.gitpod.io/) for version control
 - [w3schools](https://www.w3schools.com/cssref/css_colors.asp) to build a colour palette for the site 
+ 
 
 
 # Resources
@@ -130,6 +131,7 @@ Below are features that I would have liked to add but have been unable to do so 
 - [Am I Responsive](http://ami.responsivedesign.is/) – Check the sites responsiveness
 - [W3C](https://validator.w3.org/) Validate HTML code
 - [W3C]( https://jigsaw.w3.org/css-validator/) CSS Validation 
+- [JSHint](https://jshint.com/) JavaScript Validation 
 - [W3Schools](https://www.w3schools.com/) - helped me in researching and fixing errors along the way
 - [Stack Overflow](https://stackoverflow.com/) To troubleshoot many times when experincing issues 
 - [Wikipedia](https://en.wikipedia.org/wiki/Tic-tac-toe) - To research the history and origind of the game 
@@ -170,6 +172,10 @@ I checked the HTML code with W3C Jigsaw and there were no errors.
 <img src="assets/images/csscheck.png" alt="CSS Validation">
 
 I checked the CSS with W3C Jigsaw and no errors were found.
+
+<img src="assets/images/jscheck.png" alt="JavaScript Validation">
+
+16 warnings were found, however these are linked to alerting the developer which version must be used to enable certain operations and functions to work effectively or at all. 
 
 # Responsiveness 
 I checked the website's responsiveness using Google Chrome Dev Tools. Mobile, tablet and desktop sizes were tested, and all worked well. 
