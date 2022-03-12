@@ -1,6 +1,6 @@
 # Tic-Tac-Toe-Time - A JavaScript Project
 
-add image of site responsiveness 
+<img src="assets/images/responsiveimage.png" alt="Am I Responsive">
 
 
 This is my second milestone project, undertaken as part of the Code Institutes Diploma in Software Development.
