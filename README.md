@@ -174,10 +174,6 @@ I checked the HTML code with W3C Jigsaw and there were no errors.
 
 I checked the CSS with W3C Jigsaw and no errors were found.
 
-<img src="assets/images/jscheck.png" alt="JavaScript Validation">
-
-16 warnings were found, however these are linked to alerting the developer which version must be used to enable certain operations and functions to work effectively or at all. 
-
 # Responsiveness 
 I checked the website's responsiveness using Google Chrome Dev Tools. Mobile, tablet and desktop sizes were tested, and all worked well. 
 It also responded on each breakpoint that were set up on Media Query's and no visual or functional errors found. 
