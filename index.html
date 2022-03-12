@@ -10,6 +10,7 @@
     <title>Document</title>
 </head>
 
+<!-- Title and instructions for the game -->
 <body>
     <h1>Tic Tac Toe Time</h1>
     <p>1. Players take turns putting their marks in empty squares
@@ -20,6 +21,8 @@
         <br>
         3. When all 9 squares are full, the game is over
     </p>
+
+    <!-- The game board grid for Tic Tac Toe -->
 
     <div class="board" id="board">
         <div class="cell" data-cell></div>
@@ -32,6 +35,9 @@
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
     </div>
+
+    <!-- Message to announce winner or draw. Also restart button -->
+    
     <div class="winning-message" id="winningMessage">
         <div data-winning-message-text></div>
         <button id="restartButton">Restart</button>

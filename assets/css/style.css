@@ -7,6 +7,8 @@
   --mark-size: calc(var(--cell-size) * .8);
 }
 
+/* Basic styling for the title and paragraph */
+
 body {
   margin: 0;
 }
@@ -30,6 +32,7 @@ width: 300px;
 font-size: small;
 }
 
+/* The grid on which the game is played */
 
 .board {
   display: grid;
@@ -42,6 +45,7 @@ font-size: small;
   height:80vh;  
 }
 
+/* The cells in which marker is to be placed */ 
 
 .cell {
   width: var(--cell-size);
@@ -55,11 +59,12 @@ font-size: small;
   cursor: pointer;
 }
 
+/* Prevents a marker being placed on top of an occupied cell */
+
 .cell.x,
 .cell.circle {
   cursor: not-allowed;
 }
-
 
 
 .cell.x::before,
@@ -73,6 +78,9 @@ font-size: small;
   background-color: #ADD8E6;
 
 }
+
+/* Styling of the marker. The X and the circle were created using CSS. 
+There is also a feature that produces a hovering marker when player hovers the mouse over the keyboard */
 
 .cell::before,
 .board.x .cell:not(.x):not(.circle):hover::before {
@@ -106,6 +114,8 @@ font-size: small;
   height: calc(var(--mark-size) * .6);
   background-color: #191970;
 }
+
+/* Display a message when either X or O win, or when there is a draw. Also the background colour changes when any message is activated. Game restart button is also included here*/
 
 .winning-message {
   display: none;
@@ -215,9 +225,5 @@ font-size: small;
       width: 100vw;
       height:80vh;  
     }
-    
-
-    
-    
   }
 
