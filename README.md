@@ -132,25 +132,40 @@ Below are features that I would have liked to add but have been unable to do so 
 - [Wikipedia](https://en.wikipedia.org/wiki/Tic-tac-toe) - To research the history and origind of the game 
 - [Exploratorium](https://en.wikipedia.org/wiki/Tic-tac-toe.html) - For simple game rules 
 
+
 # Testing
 
+I have had more than a few errors along the way of creating this game. I tested the site after the implementation of each section. 
+Along the way, I found the following errors:
 
+- The hover feature does not always consistently work. 
 
+- The function to check the winner would not perform. I spent hours trying to figure out why the program kept throwing up errors in the console repeatedly. I read my code line by line and in the end a tutor from tutor support was able to spot that a capital letter was missing when defined in the functions, creating an inconsistency elsewhere in the code where it did have the capital letter at the right place. 
+
+- The responsiveness of the game on a mobile size screen was an issue. I had to get the boardgame itself to fit the mobile phone screen as it was floating partially below the lower half of the page, thus making it only half visible when first landing on the home page. I didn't want the player to have to scroll down to play the game and therefore amended the size properties assigned to the to enable it to fit the screen and display in a way that was originally intended. 
+
+- The biggest issue that I have faced with this project was figuring out the error in the syntax for the message that should display when "X" or "O" wins the game. This is something that I struggled to fix to the end as a tried many variations.
 
 
 ## User Stories Testing 
-
+I have tested the site for achieving the goals set out in “User Stories”
+-   The game is played by two players when both are present together
+-   The set of instructions are clear 
+-   The user interface is very simplistic 
+-   The game is extremely easy to navigate 
+-   The game is easy to play repeatedly and seamlessly
+-   I did not find the site to be cluttered or have additional information that was not relevant to the game or serve a purpose 
+-   The site is very easy to learn and memorise 
+-   The game is very accessible on a mobile device and does not lose its tidy form 
 
 ## Validators 
 
 INCLUDE IMAGE OF VALIDATION 
 
 
-
 # Responsiveness 
 I checked the website's responsiveness using Google Chrome Dev Tools. Mobile, tablet and desktop sizes were tested, and all worked well. 
 It also responded on each breakpoint that were set up on Media Query's and no visual or functional errors found
-
 
 # Version Control 
 
@@ -163,15 +178,14 @@ GitHUb served as the remote repository.
 The following steps were followed to maintain version control;
 
 - I created a repository on GitHub and named it 'Tic Tac Toe Time' 
-- I then signed in to Gitpod and opened a new workspace via the repository name 'TTic Tac Toe Time'
-- I created the pages, folders and files on GitPod
+- I then signed in to Gitpod and opened a new workspace via the repository name 'Tic Tac Toe Time'
+- I created the pages, folders, and files on GitPod
 - I saved my work on GitPod at regular intervals and pushed it to GitHub to keep it safe
 
-This is the process I followed having completing each significant section of code, I typed the following into the terminal:
+This is the process I followed having completed each significant section of code, I typed the following into the terminal:
 - git add . (This added the work to git)
 - git commit -m "COMMIT MESSAGE" (This committed the work)
 - git push (This pushed the work to GitHub)
-
 
 
 # Deployment 
@@ -182,3 +196,4 @@ I followed the below steps on GitHub (insert link) to deploy the website.
 - Under the 'Github pages@ section, click on the live link. 
 - On "Source", select "Branch: main' for Branch and click save.
 - The website is now published on GitHub Pages and the link is provided on the same section
+
