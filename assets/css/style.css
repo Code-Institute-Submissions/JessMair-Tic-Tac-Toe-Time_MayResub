@@ -1,11 +1,4 @@
-*, *::after, *::before {
-  box-sizing: border-box;
-}
 
-:root {
-  --cell-size: 200px;
-  --mark-size: calc(var(--cell-size) * .8);
-}
 
 /* Basic styling for the title and paragraph */
 
@@ -82,38 +75,8 @@ font-size: small;
 /* Styling of the marker. The X and the circle were created using CSS. 
 There is also a feature that produces a hovering marker when player hovers the mouse over the keyboard */
 
-.cell::before,
-.board.x .cell:not(.x):not(.circle):hover::before {
-  transform: rotate(45deg);
-}
 
-.cell.cell.x::after,
-.board.x .cell:not(.x):not(.circle):hover::after {
-  transform: rotate(-45deg);
-}
 
-.cell.circle::before,
-.cell.circle::after,
-.board.circle .cell:not(.x):not(.circle):hover::before,
-.board.circle .cell:not(.x):not(.circle):hover::after {
-  content: '';
-  position: absolute;
-  border-radius: 50%;
-}
-
-.cell.circle::before,
-.board.circle .cell:not(.x):not(.circle):hover::before {
-  width: var(--mark-size);
-  height: var(--mark-size);
-  background-color: #ADD8E6;
-}
-
-.cell.circle::after,
-.board.circle .cell:not(.x):not(.circle):hover::after {
-  width: calc(var(--mark-size) * .6);
-  height: calc(var(--mark-size) * .6);
-  background-color: #191970;
-}
 
 /* Display a message when either X or O win, or when there is a draw. Also the background colour changes when any message is activated. Game restart button is also included here*/
 
