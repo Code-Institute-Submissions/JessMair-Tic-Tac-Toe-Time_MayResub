@@ -15,6 +15,14 @@ h1 {
   text-decoration-color: #DCDCDC;
 }
 
+.container {
+  padding: 20px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+
+}
+
 p {
 display: block;
 margin-block-start: 1em;
@@ -24,6 +32,11 @@ margin-inline-end: 0px;
 text-align: center;
 width: 300px;
 font-size: small;
+}
+
+h2 {
+  text-align: center;
+  text-decoration: underline;
 }
 
 /* The grid on which the game is played */
@@ -51,23 +64,8 @@ font-size: small;
 
 /* Prevents a marker being placed on top of an occupied cell */
 
-.cell.x,
-.cell.circle {
-  cursor: not-allowed;
-}
 
 
-.cell.x::before,
-.cell.x::after,
-.board.x .cell:not(.x):not(.circle):hover::before,
-.board.x .cell:not(.x):not(.circle):hover::after {
-  content: '';
-  position: absolute;
-  width: calc(var(--mark-size)*.15);
-  height: var(--mark-size);
-  background-color: #ADD8E6;
-
-}
 
 /* Styling of the marker. The X and the circle were created using CSS. 
 There is also a feature that produces a hovering marker when player hovers the mouse over the keyboard */
@@ -77,25 +75,11 @@ There is also a feature that produces a hovering marker when player hovers the m
 
 /* Display a message when either X or O win, or when there is a draw. Also the background colour changes when any message is activated. Game restart button is also included here*/
 
-.winning-message {
-  display: none;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  background-color: rgba(173, 216, 230, .9);
-  justify-content: center;
-  align-items: center;
-  color: black;
-  font-size: 4rem;
-  flex-direction: column;
-}
 
 .winning-message button {
   font-size: 3rem;
   background-color: white;
-  border: 1px solid black;
+  border: 1px solid green;
 }
 
 .winning-message button:hover {
