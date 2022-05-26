@@ -1,6 +1,8 @@
 //There are only two markers, an X or an O 
-
-
+var player1 = "X";
+var player2 = "O";
+var playerstatus= player1;
+var gameEnd = false;
 
 /*
 Index of the grid
@@ -22,7 +24,13 @@ const winningConditions = [
 
 // The clickable cells, board game, restart button, winning message, winning message to be displayed
 
+Begin = function() {
+    startGame();
+}
 
+function startGame() {
+    board
+}
 
 // Eventlistener for when the games restart button is clicked
 
@@ -31,15 +39,7 @@ startGame();
 restartButton.addEventListener('click', startGame);
 
 function startGame() {
-    circleTurn = false;
-    cellElements.forEach(cell => {
-        cell.classList.remove(X_CLASS);
-        cell.classList.remove(CIRCLE_CLASS);
-        cell.removeEventListener('click', handleClick);
-        cell.addEventListener('click', handleClick, {once: true});
-    });
-    setBoardHoverClass();
-    winningMessageElement.classList.remove('show');
+    
 
 }
 
@@ -56,27 +56,28 @@ function endGame(draw) {
     if (draw) {
       winningMessageTextElement.innerText = 'Draw';
     } else {
-        winningMessageTextElement.innerText = `${circleTurn ? "O's" : "X's"} Wins!`
+        winningMessageTextElement.innerText = 
     }
 
     winningMessageElement.classList.add('show');
 }
 
 function isDraw() {
-    return [...cellElements].every(cell => {
-        return cell.classList.contains(X_CLASS) || 
-        cell.classList.contains(CIRCLE_CLASS);
-    });
+    
 }
+
 
 // Mark placed in cell 
 
-function placeMark
+function placeMark() {
+    
+}
 
 
 // Function for the players to take turns 
 
-function swapTurns() {
+function nextTurn() {
+    turn = turn ==="X" ? "O" : "X"
     
 }
 
