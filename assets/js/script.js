@@ -1,8 +1,21 @@
-//There are only two markers, an X or an O 
-var player1 = "X";
-var player2 = "O";
-var playerstatus= player1;
-var endGame = false;
+let cell = document.querySelectorAll('.cell')
+//console.log(cell);
+cell = Array.from(cell)
+
+let turn = "O"
+
+cell.forEach(function(cell){
+    cell.addEventListener('click', function(){
+        cell.innerText = turn
+// Function for the players to take turns 
+        turn = turn ==="X" ? "O" : "X"
+    })
+})
+
+// Function for the players to take turns 
+
+
+
 
 /*
 Index of the grid
@@ -24,74 +37,49 @@ const winningConditions = [
 
 // The clickable cells, board game, restart button, winning message, winning message to be displayed
 
-Begin = function() {
-    startGame();
-}
+//Begin = function() {
+    //startGame();
+//}
 
-function startGame() {
-    board = true 
-}
+//function startGame() {
+   // board = true 
+//}
 
 // Eventlistener for when the games restart button is clicked
 
-startGame();
+//startGame();
 
-restartButton.addEventListener('click', startGame);
+//restartButton.addEventListener('click', startGame);
 
-function startGame() {
+//function startGame() {
     
 
-}
+//}
 
 /* Actions to be performed when the mouse is clicked, either X or O is placed,
  the players turn swaps, the marker is also set to hover over the board until it is clicked into place */
  
-function 
+//function 
 
 
 
 // When the game ends, either a winner is announced or a draw in the interval message 
 
-function endGame(draw) {
-    if (draw) {
-      winningMessageTextElement.innerText = 'Draw';
-    } else {
-        winningMessageTextElement.innerText = 
-    }
+//function endGame(draw) {
+//    if (draw) {
+//      winningMessageTextElement.innerText = 'Draw';
+//    } else {
+ //       winningMessageTextElement.innerText = 
+ //   }
 
-    winningMessageElement.classList.add('show');
-}
+ //   winningMessageElement.classList.add('show');
+// }
 
-function isDraw() {
+//function isDraw() {
     
-}
+// }
 
 
-// Mark placed in cell 
-
-function cell() {
-    
-}
 
 
-// Function for the players to take turns 
 
-function nextTurn() {
-    turn = turn ==="X" ? "O" : "X"
-    
-}
-
-//Hover function
-
-function setBoardHoverClass() 
-
-
-// Checks for winning conditions 
-
-function checkWin(currentClass) {
-    return winningConditions.some(condition => {
-        return condition.every(index => {
-            return cellElements[index].classList.contains(currentClass);
-        });
-    });
-}
