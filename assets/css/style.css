@@ -42,10 +42,15 @@ h2 {
 /* The grid on which the game is played */
 
 .board {
-  display: grid;
-  grid-gap: 8px;
-  grid-template-columns: 150px 150px 150px;
-  grid-auto-rows: 150px 150px 150px;
+   display: grid;
+   grid-gap: 8px;
+   grid-template-columns: 150px 150px 150px;
+   grid-auto-rows: 150px 150px 150px;
+  }
+
+/* The cells in which marker is to be placed */ 
+
+.board > div {
   padding: 8px;
   background-color: #DCDCDC;
   border: 1px solid #1E90FF;
@@ -53,16 +58,13 @@ h2 {
   justify-content: center;
   align-items: center;
   position: relative;
-  cursor: pointer;
   
 }
-
-/* The cells in which marker is to be placed */ 
 
 .cell {
-  
+  font-size: 120px;
+  cursor: pointer;
 }
-
 /* Prevents a marker being placed on top of an occupied cell */
 
 
@@ -77,7 +79,7 @@ There is also a feature that produces a hovering marker when player hovers the m
 /* Display a message when either X or O win, or when there is a draw. Also the background colour changes when any message is activated. Game restart button is also included here*/
 
 
-.winner {
+.winning-message button {
   font-size: 3rem;
   background-color: white;
   border: 1px solid green;

@@ -2,7 +2,7 @@
 var player1 = "X";
 var player2 = "O";
 var playerstatus= player1;
-var gameEnd = false;
+var endGame = false;
 
 /*
 Index of the grid
@@ -29,7 +29,7 @@ Begin = function() {
 }
 
 function startGame() {
-    board
+    board = true 
 }
 
 // Eventlistener for when the games restart button is clicked
@@ -69,7 +69,7 @@ function isDraw() {
 
 // Mark placed in cell 
 
-function placeMark() {
+function cell() {
     
 }
 
