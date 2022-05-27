@@ -1,9 +1,7 @@
 let cell = document.querySelectorAll('.cell')
-//console.log(cell);
 cell = Array.from(cell)
 
 let turn = "O"
-
 cell.forEach(function(cell){
     cell.addEventListener('click', function(){
         cell.innerText = turn
@@ -11,11 +9,6 @@ cell.forEach(function(cell){
         turn = turn ==="X" ? "O" : "X"
     })
 })
-
-// Function for the players to take turns 
-
-
-
 
 /*
 Index of the grid
@@ -34,6 +27,36 @@ const winningConditions = [
     [0,4,8],
     [2,4,6]
 ] ;
+
+function checkForWinner(){
+    winningCombinations.forEach(function(combination){
+        let check = combination.every(idx => cells[idx].innerText.trim() == currentPlayer)
+        if(check){
+            highlightCells(combination)
+        }
+    })
+}
+
+function highlightCells(combination){
+    combination.forEach(function(idx){
+        cells[idx].classList.add("highlight")
+    })
+}
+//function checkWin(){
+ //   winnning
+//}
+
+
+
+
+
+
+
+
+
+
+
+
 
 // The clickable cells, board game, restart button, winning message, winning message to be displayed
 
