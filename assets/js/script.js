@@ -1,3 +1,7 @@
+// 2 players diffrenciated by their own symbols of X or O 
+const playerO = "O"
+const pLayerX = "X"
+
 let cell = document.querySelectorAll('.cell')
 cell = Array.from(cell)
 
@@ -28,65 +32,33 @@ const winningConditions = [
     [2,4,6]
 ] ;
 
-function checkForWinner(){
-    winningCombinations.forEach(function(combination){
-        let check = combination.every(idx => cells[idx].innerText.trim() == currentPlayer)
-        if(check){
-            highlightCells(combination)
-        }
-    })
-}
-
-function highlightCells(combination){
-    combination.forEach(function(idx){
-        cells[idx].classList.add("highlight")
-    })
-}
-//function checkWin(){
- //   winnning
+//function checkForWinner(){
+  //  winningCombinations.forEach(function(combination){
+     //   let check = combination.every(idx => cells[idx].innerText.trim() == currentPlayer)
+        //if(check){
+       //     highlightCells(combination)
+       // }
+   // })
 //}
 
 
+//function checkWin()
 
 
 
-
-
-
-
-
-
-
-
-// The clickable cells, board game, restart button, winning message, winning message to be displayed
-
-//Begin = function() {
-    //startGame();
-//}
-
-//function startGame() {
-   // board = true 
-//}
-
-// Eventlistener for when the games restart button is clicked
-
-//startGame();
 
 //restartButton.addEventListener('click', startGame);
+//document.getElementById("reset").addEventListener("click", function() {
+    
+ // });
+
+
 
 //function startGame() {
     
 
-//}
-
-/* Actions to be performed when the mouse is clicked, either X or O is placed,
- the players turn swaps, the marker is also set to hover over the board until it is clicked into place */
- 
-//function 
-
-
-
 // When the game ends, either a winner is announced or a draw in the interval message 
+
 
 //function endGame(draw) {
 //    if (draw) {

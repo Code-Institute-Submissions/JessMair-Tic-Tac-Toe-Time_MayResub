@@ -32,6 +32,7 @@ margin-inline-end: 0px;
 text-align: center;
 width: 300px;
 font-size: small;
+
 }
 
 h2 {
@@ -63,20 +64,20 @@ h2 {
 
 .cell {
   font-size: 120px;
-  cursor: pointer;
+}
+
+
+#announce { 
+  color: red;
+  
 }
 /* Prevents a marker being placed on top of an occupied cell */
 
 
 
 
-/* Styling of the marker. The X and the circle were created using CSS. 
-There is also a feature that produces a hovering marker when player hovers the mouse over the keyboard */
 
-
-
-
-/* Display a message when either X or O win, or when there is a draw. Also the background colour changes when any message is activated. Game restart button is also included here*/
+/* Display a message when either X or O win, or when there is a draw. Game restart button is also included here*/
 
 
 .winning-message button {
