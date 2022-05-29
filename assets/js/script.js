@@ -2,9 +2,21 @@
 const playerO = "O"
 const pLayerX = "X"
 
+// To allow the game to be restarted and to determine when it has ended 
+let startGame = true
+
+// This will show under the grid to make player aware of who's turn it is and if it is a draw
+const announce_win = () => 'Player $(turn) Wins';
+const draw = () => `Its a Draw!`;
+
+const game = document.querySelector('current_game');
+
+
+// Targets the cells and turn the cells into an array 
 let cell = document.querySelectorAll('.cell')
 cell = Array.from(cell)
 
+// The game will always start with player "O"
 let turn = "O"
 cell.forEach(function(cell){
     cell.addEventListener('click', function(){
@@ -31,6 +43,8 @@ const winningConditions = [
     [0,4,8],
     [2,4,6]
 ] ;
+
+
 
 //function checkForWinner(){
   //  winningCombinations.forEach(function(combination){
