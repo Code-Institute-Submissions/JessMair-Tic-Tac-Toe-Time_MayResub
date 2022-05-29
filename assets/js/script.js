@@ -1,4 +1,4 @@
-// 2 players diffrenciated by their own symbols of X or O 
+// 2 players differenciated by their own symbols of X or O 
 const playerO = "O"
 const pLayerX = "X"
 
@@ -21,6 +21,7 @@ let turn = "O"
 cell.forEach(function(cell){
     cell.addEventListener('click', function(){
         cell.innerText = turn
+
 // Function for the players to take turns 
         turn = turn ==="X" ? "O" : "X"
     })
@@ -44,32 +45,33 @@ const winningConditions = [
     [2,4,6]
 ] ;
 
+function handleCheckWinner() {
+    let roundWon = false;
+    for (let i = 0; i <= 9; i++) {
+        const winCondition = winningConditions[i];
+        let a = game[winCondition[0]];
+        let b = game[winCondition[1]];
+        let c = game[winCondition[2]];
+        if (a === '' || b === '' || c === '') {
+            continue;
+        }
+        if (a === b && b === c) {
+            roundWon = true;
+            break
+        }
+    }
+if (roundWon) {
+        statusDisplay.innerHTML = winningMessage();
+        gameActive = false;
+        return;
+    }
+}
 
 
-//function checkForWinner(){
-  //  winningCombinations.forEach(function(combination){
-     //   let check = combination.every(idx => cells[idx].innerText.trim() == currentPlayer)
-        //if(check){
-       //     highlightCells(combination)
-       // }
-   // })
-//}
+
+document.querySelector('.restartButton').addEventListener('click', handleClick, startGame);
 
 
-//function checkWin()
-
-
-
-
-//restartButton.addEventListener('click', startGame);
-//document.getElementById("reset").addEventListener("click", function() {
-    
- // });
-
-
-
-//function startGame() {
-    
 
 // When the game ends, either a winner is announced or a draw in the interval message 
 
@@ -88,7 +90,17 @@ const winningConditions = [
     
 // }
 
+function handleCheckWinner() {
+
+}
 
 
+function handleRestart() {
 
+}
+
+
+function handlestartGame() {
+
+}
 
