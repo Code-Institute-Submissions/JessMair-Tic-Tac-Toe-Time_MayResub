@@ -16,25 +16,28 @@ let oCells = [];
 
 // The game will always start with player "O"
 let turn = "O"
-cell.forEach(function(cell, Index){
+cell.forEach(function(cell, index){
     cell.addEventListener('click', function(){
         if (!usedCells.includes(index)) {
-            usedCells.push(index);
-            cell.innerText = turn;
-            //work out if win or draw
-            if (turn === "X") {
-              xCells.push(index);
-              checkWinner(xCells, 'X');
-            }
-            if (turn === "O") {
-              oCells.push(index);
-              checkWinner(oCells, 'O');
-            }
-// Function for the players to take turns 
-        turn = turn ==="X" ? "O" : "X"
+          usedCells.push(index);
+          cell.innerText = turn;
+          //work out if win or draw
+          if (turn === "X") {
+            xCells.push(index);
+            checkWinner(xCells, 'X');
+          }
+          if (turn === "O") {
+            oCells.push(index);
+            checkWinner(oCells, 'O');
+          }
+          turn = turn ==="X" ? "O" : "X"
+          // check if a draw, all cells will be used
+          if (usedCells.length === 9) {
+            checkWinner(xCells, 'D');
+          }
+        } 
     })
 })
-
 /*
 Index of the grid
 [0] [1] [2]
