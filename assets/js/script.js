@@ -14,14 +14,22 @@ let oCells = [];
 
 
 
-
 // The game will always start with player "O"
 let turn = "O"
-cell.forEach(function(cell){
+cell.forEach(function(cell, Index){
     cell.addEventListener('click', function(){
-    
-        cell.innerText = turn
-
+        if (!usedCells.includes(index)) {
+            usedCells.push(index);
+            cell.innerText = turn;
+            //work out if win or draw
+            if (turn === "X") {
+              xCells.push(index);
+              checkWinner(xCells, 'X');
+            }
+            if (turn === "O") {
+              oCells.push(index);
+              checkWinner(oCells, 'O');
+            }
 // Function for the players to take turns 
         turn = turn ==="X" ? "O" : "X"
     })
