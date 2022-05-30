@@ -3,7 +3,7 @@ const playerO = "O"
 const pLayerX = "X"
 
 // To allow the game to be restarted and to determine when it has ended 
-let startGame = true
+let startGame = true;
 
 // This will show under the grid to make player aware of who's turn it is and if it is a draw
 const announce_win = () => 'Player $(turn) Wins';
@@ -20,6 +20,7 @@ cell = Array.from(cell)
 let turn = "O"
 cell.forEach(function(cell){
     cell.addEventListener('click', function(){
+    
         cell.innerText = turn
 
 // Function for the players to take turns 
@@ -86,12 +87,15 @@ document.querySelector('.restartButton').addEventListener('click', handleClick, 
  //   winningMessageElement.classList.add('show');
 // }
 
-//function isDraw() {
-    
-// }
+
 
 function handleCheckWinner() {
 
+}
+
+
+function isDraw() {
+    
 }
 
 
