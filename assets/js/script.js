@@ -85,4 +85,12 @@ function checkWinner(playerArray, player) {
     //now add this under grid or modal
     location.reload();
   }
+  
+  function findCommonElements3(arr1, arr2) {
+    // Iterate through each element in the
+    // first array and if some of them
+    // include the elements in the second
+    // array then return true
+    return arr1.some(item => arr2.includes(item))
+  }
 
