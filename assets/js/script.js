@@ -56,31 +56,23 @@ const winningConditions = [
     [2,4,6]
 ] ;
 
+function checkWinner(playerArray, player) {
+    if (player === 'D') {
+      announce_win('D');
+    }
+    winningConditions.forEach(win => {
+      let count = 0;
+      win.forEach(el => {
+        if (playerArray.includes(el)) {
+          count ++;
+          if (count === 3) {
+            console.log('winner');
+            announce_win(player);
+          }
+        }
+      })
+      }
+    );
+  }
 
-
-document.querySelector('.restartButton').addEventListener('click', handleClick, startGame);
-
-
-
-
-
-
-function handleCheckWinner() {
-
-}
-
-
-function isDraw() {
-    
-}
-
-
-function handleRestart() {
-
-}
-
-
-function handlestartGame() {
-
-}
 
