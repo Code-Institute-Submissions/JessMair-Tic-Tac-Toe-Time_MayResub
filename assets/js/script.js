@@ -76,15 +76,20 @@ function checkWinner(playerArray, player) {
   }
 
   function announce_win(player) {
+    
     if (player === 'D') {
       //now add this under grid or modal
-      console.log('Good game, it is a draw');
+      alert('Good game, it is a draw');
       location.reload();
     }
-    console.log(`Well Done, Player ${player} wins the game`);
+    alert(`Well Done, Player ${player} wins the game`);
     //now add this under grid or modal
     location.reload();
+
   }
+
+  
+  
   
   function findCommonElements3(arr1, arr2) {
     // Iterate through each element in the
