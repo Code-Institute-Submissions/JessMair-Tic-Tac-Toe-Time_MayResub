@@ -8,7 +8,7 @@ body {
 }
 
 h1 {
-  text-align: center;
+  text-align: left;
   font-size: 2.5rem;
   color: #1E90FF;
   text-transform: uppercase;
@@ -36,7 +36,8 @@ font-size: small;
 }
 
 h2 {
-  text-align: center;
+  color: #DC143C;
+  text-align: left;
   text-decoration: underline;
 }
 
@@ -67,8 +68,9 @@ h2 {
 }
 
 
-#announce { 
-  color: red;
+#announce_win { 
+  color: #DC143C;
+  text-align: left;
   
 }
 /* Prevents a marker being placed on top of an occupied cell */
@@ -95,6 +97,8 @@ h2 {
 .winning-message.show {
   display: flex;
 }
+
+
 
 
 /* media queries taken from https://gist.github.com/gokulkrishh/242e68d1ee94ad05f488

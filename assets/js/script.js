@@ -94,3 +94,4 @@ function checkWinner(playerArray, player) {
     return arr1.some(item => arr2.includes(item))
   }
 
+  
