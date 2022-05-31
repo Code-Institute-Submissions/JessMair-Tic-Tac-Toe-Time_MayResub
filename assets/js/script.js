@@ -87,9 +87,6 @@ function checkWinner(playerArray, player) {
     location.reload();
 
   }
-
-  
-  
   
   function findCommonElements3(arr1, arr2) {
     // Iterate through each element in the

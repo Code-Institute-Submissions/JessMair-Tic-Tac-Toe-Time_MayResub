@@ -68,39 +68,6 @@ h2 {
 }
 
 
-#announce_win { 
-  color: #DC143C;
-  text-align: left;
-  
-}
-/* Prevents a marker being placed on top of an occupied cell */
-
-
-
-
-
-/* Display a message when either X or O win, or when there is a draw. Game restart button is also included here*/
-
-
-.winning-message button {
-  font-size: 3rem;
-  background-color: white;
-  border: 1px solid green;
-}
-
-.winning-message button:hover {
-  background-color: black;
-  color: white;
-  border-color: white;
-}
-
-.winning-message.show {
-  display: flex;
-}
-
-
-
-
 /* media queries taken from https://gist.github.com/gokulkrishh/242e68d1ee94ad05f488
  
     ##Device = Laptops, Desktops
