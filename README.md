@@ -170,7 +170,7 @@ I have tested the site for achieving the goals set out in “User Stories”
 
 ## Validators 
 
-<img src="assets/images/htmlvalidation.png" alt="HTML Validation">
+<img src="assets/images/htmlcheck.png" alt="HTML Validation">
 
 I checked the HTML code with W3C Jigsaw and there were no errors.
 
