@@ -1,6 +1,6 @@
 # Tic-Tac-Toe-Time - A JavaScript Project
 
-<img src="assets/images/responsiveimage.png" alt="Am I Responsive">
+<img src="assets/images/picturegame.png" alt="Image of game">
 
 
 This is my second milestone project, undertaken as part of the Code Institutes Diploma in Software Development.
@@ -55,11 +55,12 @@ The features of this project:
 1 page
 A set of instructions 
 A boardgame 
-The cursor turns into a pointer when hovering over the grid, so player knows intuits the grid is interactive
-Markers that appear when the mouse is hovered over the board to allow the player to visualise which cell to place their marker in, as per their turn
-A "not allowed" symbol to appear when a player hover over an already occupied cell 
-A message at the end of a game, notifying of either a winner or a draw between the players
-A "Restart" button, that when pressed resets the board for a new game
+An alert box
+
+When the player chooses a box, an "X" or "O" appears in the box depending on which symbols turn it is. 
+An alert box message appears at the end of a game, notifying of either a winner or a draw between the players.
+This alert box contains a button the reads "Okay", clicking on which refreshes the page and therefore reloads the game. 
+
   
 # The Structure Plane 
 
@@ -67,16 +68,19 @@ The website only has one page. The page contains the title, instructions and the
 The goal of this page is to be very easy to understand and digest. Also, for someone who is familiar with the classic game of Tic Tac Toe, to be able to go straight to playing the game. 
 
 <img src="assets/images/gameinprogress.png" alt="image of a game in progress"> 
-
-The colour of the board game and the detail is complimentary and not too bright or dark, creating a good contrast and yet complimenting each other. 
+<br>
+<img src="assets/images/rules.png" alt="image of a game in progress"> 
+The colour of the board game and the detail is complimentary with a black blackground, allowing the board and the intrsuctions to stand out in contrast.
 The instructions are not overly wordy so that the game is quick and easy to move on to. 
-The board is interactive too as it registers a click and prevents the player from being able to click on a cell that is already occupied 
+The board is interactive too as it registers a click and prevents the player from being able to click on a cell that is already occupied.
 
-<img src="assets/images/owin.png" alt="image of O's winning the game">
+<img src="assets/images/playerowinalert.png" alt="image of O's winning the game">
+<br>
+<img src="assets/images/playerxwinalert.png" alt="image of O's winning the game">
 
 The above image shows the screen that shows containing a message of which player won, "X" or "O". The "Restart" button is interactive.
 
-<img src="assets/images/gamedraw.png" alt="image of a game that ended as a draw"> 
+<img src="assets/images/drawalert.png" alt="image of a game that ended as a draw"> 
 
 The above image shows when the game ends in a draw. The "Restart" button is interactive. 
 

@@ -23,6 +23,7 @@ h1 {
 
 }
 
+/* Instructions */
 p {
 display: block;
 margin-block-start: 1em;
@@ -35,6 +36,7 @@ font-size: small;
 
 }
 
+/* The Let's Play message */
 h2 {
   color: #DC143C;
   text-align: left;
