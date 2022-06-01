@@ -129,22 +129,4 @@ h2 {
     ##Screen = B/w 320px to 479px
   */
   
-  @media screen (min-width: 320px) and (max-width: 480px) {
-
-    :root {
-      --cell-size: 100px;
-      --mark-size: calc(var(--cell-size) * .8);
-    }
-    
-    .board {
-      display: grid;
-      justify-content: center;
-      align-content: center;
-      justify-items: center;
-      align-items: center;
-      grid-template-columns: repeat(3, auto);
-      width: 100vw;
-      height:80vh;  
-    }
-  }
 

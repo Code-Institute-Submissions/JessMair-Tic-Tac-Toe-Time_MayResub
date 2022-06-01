@@ -52,14 +52,14 @@ The project was planned in 5 stages.
 
 The features of this project:
 
-1 page
-A set of instructions 
-A boardgame 
+1 page /
+A set of instructions /
+A boardgame /
 An alert box
 
 When the player chooses a box, an "X" or "O" appears in the box depending on which symbols turn it is. 
 An alert box message appears at the end of a game, notifying of either a winner or a draw between the players.
-This alert box contains a button the reads "Okay", clicking on which refreshes the page and therefore reloads the game. 
+This alert box contains a button that reads "OK", clicking on which refreshes the page and therefore reloads the game. 
 
   
 # The Structure Plane 
@@ -70,43 +70,48 @@ The goal of this page is to be very easy to understand and digest. Also, for som
 <img src="assets/images/gameinprogress.png" alt="image of a game in progress"> 
 <br>
 <img src="assets/images/rules.png" alt="image of a game in progress"> 
+
 The colour of the board game and the detail is complimentary with a black blackground, allowing the board and the intrsuctions to stand out in contrast.
 The instructions are not overly wordy so that the game is quick and easy to move on to. 
 The board is interactive too as it registers a click and prevents the player from being able to click on a cell that is already occupied.
 
 <img src="assets/images/playerowinalert.png" alt="image of O's winning the game">
-<br>
+
+
 <img src="assets/images/playerxwinalert.png" alt="image of O's winning the game">
 
-The above image shows the screen that shows containing a message of which player won, "X" or "O". The "Restart" button is interactive.
+The above images show the alert box containing a message of which player won, "X" or "O". The "OK" button is interactive.
+
 
 <img src="assets/images/drawalert.png" alt="image of a game that ended as a draw"> 
 
 The above image shows when the game ends in a draw. The "Restart" button is interactive. 
 
-<img src="assets/images/gamehome.png" alt="image of a game that has been reset to a clear board"> 
 
-The above shows the screen after the "Restart" button is pressed. A clean boardgame is visible. 
+<img src="assets/images/cleanboard.png" alt="image of a game that has been reset to a clear board"> 
+
+The above shows the screen after the "OK" button is pressed. A clean boardgame is visible. 
 
 # The Skeleton Plane 
 
 The design of this project was to make the content simplistic and one of the key objectives was to make the site fully responsive to a mobile screen size, as well as the bigger screen sizes. The reason being that such games are more likely to be played on mobile phones than on desktops for example.
 
-Below is a link to the wireframe I had completed
+Below is a link to the original wireframe I had completed
 
 [Wireframe](assets/images/wireframe.jpg)
 
+There have been some changes between the current game and the original wireframe, such as there is no live restart button or cover screen that appears prior to the game restarting. However much of the game layout and feature and functions remain the same. 
 
 # The Surface Plane
 
 ## Colour Palette
-<img src="assets/images/midnightcolor.png" alt="Primary Background Colour, Midnight Blue">
 
-I used the site w3schools.com's "CSS-Colours" section to select a colour combination. I used the above "Midnight Blue" as the primary colour for the actual board game as it is dark and would create a contrast to the secondary colour I selected.
+I used the site w3schools.com's "CSS-Colours" section to select a colour combination.
 
-<img src="assets/images/lightbluecolor.png" alt="Secondary colour for the game's details">
-The light blue has been used for the details over the board game, such as the grid that divides the cells, the markers and the slightly transparent cover that displays in-between games behind the notification bearing the game's outcome. 
-I found these two colours to be complimentary whilst still having a strong enough contrast to maintain the sites accessibility. 
+<img src="assets/images/black.png" alt="black"> <img src="assets/images/grey.png" alt="Grey">
+<img src="assets/images/crimson.png" alt="crimson"> <img src="assets/images/blue.png" alt="Blue">
+
+I have used black for the background to create a strong contrast and layered it with a grid that is coloured in "Gainsbro" which is a grey shade. This provides a contrasted base for the game to stand out on. The "X" and "O" symbols are "Dodger Blue" and therefore stand out against the grey background, again creating a contrast and yet also being bright and eye catching to the user. The invitation to play "Let's Play" is "Crimson" red. This was selected to add another dimension of colour and to give the game a complete look of being fun and inviting. 
 
 ## Font
 
@@ -116,8 +121,7 @@ I have used google fonts and chose 1 font called "League Gothic". I found this f
 Below are features that I would have liked to add but have been unable to do so yet due to time constraints and not having the knowledge to do so yet either.
 -   I would like to upgrade the code to include an option of playing against the computer. This is so a person who is alone can also enjoy the game. 
 
-
- Technologies used
+# Technologies used
 - [HTML5](https://en.wikipedia.org/wiki/HTML) for markup 
 - [CSS3](https://en.wikipedia.org/wiki/CSS) for style 
 - [Google Fonts](https://fonts.google.com/) for fonts 
@@ -126,19 +130,20 @@ Below are features that I would have liked to add but have been unable to do so 
 - [w3schools](https://www.w3schools.com/cssref/css_colors.asp) to build a colour palette for the site 
  
 
-
 # Resources
 - [Code Institute](https://codeinstitute.net/) Course material
 - [Code Institute](https://codeinstitute.net/) Slack community 
-- [W3Schools]( https://www.w3schools.com/) 
-- [Am I Responsive](http://ami.responsivedesign.is/) – Check the sites responsiveness
+- [Google Console](https://search.google.com/search-console/about) Bug fixes and testing 
 - [W3C](https://validator.w3.org/) Validate HTML code
 - [W3C]( https://jigsaw.w3.org/css-validator/) CSS Validation 
 - [JSHint](https://jshint.com/) JavaScript Validation 
-- [W3Schools](https://www.w3schools.com/) - helped me in researching and fixing errors along the way
+- [W3Schools](https://www.w3schools.com/) - Helped me in researching and fixing errors along the way
 - [Stack Overflow](https://stackoverflow.com/) To troubleshoot many times when experincing issues 
 - [Wikipedia](https://en.wikipedia.org/wiki/Tic-tac-toe) - To research the history and origind of the game 
 - [Exploratorium](https://en.wikipedia.org/wiki/Tic-tac-toe.html) - For simple game rules 
+- [Code Institute](https://codeinstitute.net/) For the course material and tutor support
+- [YouTube](https://www.youtube.com/) Research how to make a grid 
+- [Geeks For Geeks](www.geeksforgeeks.org) Research and fix errors 
 
 
 # Testing
@@ -146,16 +151,11 @@ Below are features that I would have liked to add but have been unable to do so 
 I have had more than a few errors along the way of creating this game. I tested the site after the implementation of each section. 
 Along the way, I found the following errors:
 
-- The hover feature does not always consistently work. It works on full screen mode, however when used on mobile screen mode it does not seem to work in the console. 
+- There were issues getting the winning combinations registered to the console and being checked. This took many days to resolve and in the end my mentor Spencer Barriball was able to assist me with this. 
 
-- The function to check the winner would not perform. I spent hours trying to figure out why the program kept throwing up errors in the console repeatedly. I read my code line by line and in the end a tutor from tutor support was able to spot that a capital letter was missing when defined in the functions, creating an inconsistency elsewhere in the code where it did have the capital letter at the right place. 
+-  Another issue was preventing the symbols from over-riding one another if the user clicked on a prepopulated box. This was resolved through creating a "let" for "usedcells" which when triggered were pushed into the index and therefore registered as occupying the cells. Thus resolving the issue. 
 
-- The responsiveness of the game on a mobile size screen was an issue. I had to get the boardgame itself to fit the mobile phone screen as it was floating partially below the lower half of the page, thus making it only half visible when first landing on the home page. I didn't want the player to have to scroll down to play the game and therefore amended the size properties assigned to the to enable it to fit the screen and display in a way that was originally intended. 
-
-- The biggest issue that I have faced with this project was figuring out the error in the syntax for the message that should display when "X" or "O" wins the game. This is something that I struggled to fix to the end as a tried many variations. I was able to google this and eventually fix the error in the code that allowed it to work. 
-
-- Although I have added code for "X" and "O" to take turns going first, X is always first and this is a bug that I have not been able to fix in time. 
-
+- The responsiveness of the game on a mobile size screen was an issue. I had to get the boardgame itself to fit in the size of a mobile screen. The board game was not fully present on the screen and the cells were very small and looked terrible to the user. After a couple of days trying to figure out the issue through media queries, I contacted tutor support and after 45 mins the issue was finally resolved. I needed to edit the original size of the board and that led to it being more responsive on the smaller screen sizes.
 
 ## User Stories Testing 
 I have tested the site for achieving the goals set out in “User Stories”
@@ -170,7 +170,7 @@ I have tested the site for achieving the goals set out in “User Stories”
 
 ## Validators 
 
-<img src="assets/images/htmlcheck.png" alt="HTML Validation">
+<img src="assets/images/htmlvalidation.png" alt="HTML Validation">
 
 I checked the HTML code with W3C Jigsaw and there were no errors.
 
@@ -182,12 +182,9 @@ I checked the CSS with W3C Jigsaw and no errors were found.
 I checked the website's responsiveness using Google Chrome Dev Tools. Mobile, tablet and desktop sizes were tested, and all worked well. 
 It also responded on each breakpoint that were set up on Media Query's and no visual or functional errors found. 
 
-I also checked the sites accesibility score using the google lighthouse tool. Below are a few images of the output showing that the site meets the standards required. 
+I also checked the sites accessibility score using the google lighthouse tool. Below are a few images of the output showing that the site meets the standards required. 
 
-<img src="assets/images/lighthouse1.png" alt="Image showing scores"> <img src="assets/images/lighthouse2.png" alt="image of report">
-
-<img src="assets/images/lighthouseend.png" alt="footer of report">
-
+<img src="assets/images/lighthouse1.png" alt="Image showing scores">
 
 # Version Control 
 
@@ -209,7 +206,6 @@ This is the process I followed having completed each significant section of code
 - git commit -m "COMMIT MESSAGE" (This committed the work)
 - git push (This pushed the work to GitHub)
 
-
 # Deployment 
 
 I followed the below steps on GitHub (insert link) to deploy the website. 
@@ -219,3 +215,18 @@ I followed the below steps on GitHub (insert link) to deploy the website.
 - On "Source", select "Branch: main' for Branch and click save.
 - The website is now published on GitHub Pages and the link is provided on the same section
 
+# Credits 
+https://stackoverflow.com/questions/28712279/all-possible-tic-tac-toe-winning-combinations
+
+The games winning combinations were found through stack overflow, alongside a lot of trouble shooting. 
+
+https://www.google.com/search?q=how+to+create+a+3+x+3+grid+on+html&rlz=1C1CHBF_en-GBGB803GB803&oq=how+to+create+a+3+x+3+grid+on+html+&aqs=chrome..69i57j33i10i160l4.10192j0j7&sourceid=chrome&ie=UTF-8#kpvalbx=_O0CNYo7LDNPB8gLr_Zi4Aw15
+
+I used this video for a reference of how to make a grid 
+
+https://www.geeksforgeeks.org/how-to-find-if-two-arrays-contain-any-common-item-in-javascript/
+
+This site helped in figuring out the code of how to detect common arrays 
+
+And last but certainly by no means least, the greatest credit goes to my mentor Spencer Barriball who took a great deal of time out to help me fix errors and solve some complicated issues with the game. I am forever grateful for Spencer's mentorship.
+ 
